@@ -1,0 +1,60 @@
+body, button, input, textarea, option{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: calc(981px + 24px);
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.card {
+    display: block;
+    border-radius: 4px;
+    background: #131313;
+    padding: 6px;
+}
+
+.none{
+    display: none;
+}
+
+.h6-title{
+    font-size: var(--fz18);
+    font-weight: 700;
+}
+
+@media (max-width: 981px) {
+    .container {
+        max-width: calc(981px + 24px);
+        min-width: calc(700px + 24px);
+    }
+}   
+
+@media (max-width: 700px) {
+    body{
+        min-width: 320px;
+    }
+    .container{
+        max-width: calc(700px + 16px);
+        min-width: calc(296px + 16px);
+        padding: 0 16px;
+    }
+}
